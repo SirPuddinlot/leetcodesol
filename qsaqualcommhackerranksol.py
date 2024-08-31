@@ -23,7 +23,6 @@ def no_adjacent_pair(words):
       substitutions = 0
       word_list = list(word)
       length = len(word_list)
-
       i = 0
       while i < length - 1:
           if word_list[i] == word_list[i + 1]:
@@ -31,10 +30,7 @@ def no_adjacent_pair(words):
               new_char = '1' 
               word_list[i + 1] = new_char
           i += 1
-
       return substitutions
-
-if words is None:
-    return []
-
-return [count_substitutions(word) for word in words]
+  if words is None:
+      return []
+  return [count_substitutions(word) for word in words]
