@@ -1,6 +1,7 @@
 def min_time_distributed(developmenttime, integrationtime):
   #given two lists, one called dev where there are n contributers and int where only 1 contributor
   #find optimal placements so that is it the minimum time for all persons
+  #this is wrong
   critical_indices = []
   for i in range(len(developmenttime)):
     if integrationtime[i] <= developmenttime[i]:
